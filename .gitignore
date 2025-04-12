@@ -1,0 +1,8 @@
+# macOS
+.DS_Store
+
+# SwiftBar debug files
+*.log
+
+# Misc
+*.bak
