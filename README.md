@@ -26,11 +26,6 @@ You can start/stop Tor, check your current IP, change your identity, and update 
 5. Check or create torrc file
 6. Done! Click the plugin in your menu bar 🎉
 
-## Notes
-
-Works with bridges configured in torrc (e.g. obfs4)
-Default paths are based on Homebrew Tor installation for Apple Silicon:
-
 ## Example torrc
 
 To use this plugin, you need to configure Tor with control and bridge support.  
