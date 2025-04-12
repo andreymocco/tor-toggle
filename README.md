@@ -49,6 +49,37 @@ Replace the Bridge line with your own bridge obtained from https://bridges.torpr
 
 If the file doesn't exist, create it at: `/opt/homebrew/etc/tor/torrc`
 
+## 🔧 Using with a Browser (via SwitchyOmega)
+
+To route your browser traffic through Tor, you can use the [SwitchyOmega](https://github.com/FelisCatus/SwitchyOmega) extension (available for Chrome and Chromium-based browsers).
+
+### 🛠 Setup
+
+1. Install the SwitchyOmega extension.
+2. Open the extension’s options.
+3. Create a new profile of type **Proxy**.
+4. Set the following values:
+   - **Protocol**: `SOCKS5`
+   - **Server**: `127.0.0.1` (or `localhost`)
+   - **Port**: `9050`
+5. Save the profile (e.g., name it `Tor`).
+6. Activate the profile — all traffic will now be routed through Tor as long as the profile is enabled.
+
+### 🧠 Smart Proxy Rules
+
+SwitchyOmega also supports **automatic routing rules**, allowing you to choose which websites should go through Tor and which should connect directly. This is super handy for:
+
+- Accessing `.onion` or geo-restricted sites through Tor
+- Keeping fast access to trusted services (like YouTube or Google) without Tor latency
+
+You can define rules by domain, URL patterns, or even use external rule lists (like gfwlist or your own custom sets).
+
+### 🧪 How to check if it's working?
+
+- Visit [https://check.torproject.org](https://check.torproject.org) — if everything is set up correctly, you’ll see a message confirming you’re using Tor.
+- Alternatively, you can use the built-in button in the SwiftBar plugin to check your current Tor IP.
+
+
 ## Author
 
 [@andreymocco](https://github.com/andreymocco)
