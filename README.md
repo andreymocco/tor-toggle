@@ -3,6 +3,8 @@
 A SwiftBar plugin to control the Tor service from the macOS menu bar.  
 You can start/stop Tor, check your current IP, change your identity, and update your bridge config.
 
+<img src="./UI.png" alt="Tor Toggle Demo" width="440" height="200">
+
 ## Features
 
 - Toggle Tor service on/off
